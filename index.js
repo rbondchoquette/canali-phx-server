@@ -9,7 +9,7 @@ const voteThreeRouter = require('./routes/vote-three-router');
 const voteFourRouter = require('./routes/vote-four-router');
 
 const app = express();
-const apiPort = 8000;
+const apiPort = process.env.PORT || 8000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
